@@ -1,0 +1,11 @@
+Flask
+Flask-SQLAlchemy
+Flask-Bcrypt
+Flask-JWT-Extended
+Flask-Cors
+python-dotenv
+redis
+celery
+eventlet
+gunicorn
+flask_mail

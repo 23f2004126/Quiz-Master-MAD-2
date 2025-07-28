@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Monthly Report</title>
+</head>
+<body>
+    <h1>Monthly Activity Report for {{ report_month }}</h1>
+    <p>Hi {{ user.full_name }},</p>
+    <p>Here's a summary of your activity on Quiz Master last month:</p>
+    <ul>
+        <li><strong>Quizzes Taken:</strong> {{ quizzes_taken }}</li>
+        <li><strong>Average Score:</strong> {{ average_score }}</li>
+    </ul>
+    <h3>Detailed Results:</h3>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Quiz Title</th>
+                <th>Score</th>
+                <th>Date Taken</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for score in scores %}
+            <tr>
+                <td>{{ score.quiz.title }}</td>
+                <td>{{ score.total_scored }}</td>
+                <td>{{ score.time_stamp_of_attempt.strftime('%Y-%m-%d') }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>Keep up the great work!</p>
+    <p>The Quiz Master Team</p>
+</body>
+</html>

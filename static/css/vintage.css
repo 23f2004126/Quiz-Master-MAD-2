@@ -1,0 +1,41 @@
+/* --- Global Theme & Body --- */
+body { background-color: #f5f2e9; background-image: url('/static/assets/brown-bg.jpg'); background-size: cover; background-attachment: fixed; font-family: 'IM Fell English', 'Times New Roman', serif; color: #4a3933; }
+#app { display: flex; flex-direction: column; min-height: 100vh; }
+footer { background-color: rgba(0,0,0,0.6); padding: 12px 0; text-align: center; font-weight: bold; font-size: 1rem; color: white; text-shadow: 1px 1px 2px rgba(0,0,0,0.4); }
+
+/* --- Main Containers --- */
+.content-container, .form-container { background-color: rgba(253, 246, 227, 0.94); border: 1px solid #d2b48c; border-radius: 8px; padding: 30px 40px; margin: 20px auto; width: 95%; max-width: 800px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); }
+.form-container { max-width: 650px; }
+.wide-container { max-width: 1200px; }
+
+/* --- Typography --- */
+h1,h2,h3,h4,h5,h6 { font-family: 'Cormorant Garamond', 'Garamond', serif; font-weight: 600; color: #5a3e2b; }
+.page-title { font-family: 'Great Vibes', cursive; font-size: 3.5rem; color: #5a3e2b; text-align: center; margin-bottom: 25px; }
+
+/* --- Forms & Buttons --- */
+.form-label { font-weight: bold; color: #5f4b3b; font-size: 1.1rem; }
+.form-control, .form-select { background-color: #fff; border: 1px solid #a1866f; border-radius: 6px; padding: 10px; font-size: 1.1rem; font-family: 'IM Fell English', serif; }
+.form-control:focus, .form-select:focus { background-color: #fff; border-color: #8b6b52; box-shadow: 0 0 0 3px rgba(161, 134, 111, 0.2); }
+.btn-primary { background-color: #8b6b52; border-color: #7c5f48; color: #fff; font-weight: bold; padding: 10px 20px; transition: all 0.3s ease; }
+.btn-primary:hover { background-color: #72553e; border-color: #5a3e2b; color: #fff; transform: translateY(-2px); }
+.btn-secondary { background-color: #a1866f; border-color: #8b6b52; color: #fff; } .btn-secondary:hover { background-color: #8b6b52; border-color: #7c5f48; color: #fff; }
+.btn-info { background-color: #788995; border-color: #657580; color: #fff; } .btn-info:hover { background-color: #657580; border-color: #54646e; color: #fff; }
+.btn-danger { background-color: #c82333; border-color: #bd2130; }
+
+/* --- Cards for listings --- */
+.item-card { background-color: #fdfaf2; border: 1px solid #d2b48c; border-radius: 8px; padding: 20px; margin: 15px auto; width: 90%; max-width: 600px; text-align: center; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.item-card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.1); border-color: #a1866f; }
+.item-card-title { font-size: 1.5rem; font-weight: bold; } .item-card-desc { font-size: 1rem; color: #5f4b3b; } .item-card-meta { color: #6d4c41; }
+
+/* --- Admin & Profile --- */
+.admin-section { background-color: rgba(243, 227, 203, 0.5); border: 2px dashed #a67c52; border-radius: 10px; padding: 20px; margin-bottom: 40px; }
+.admin-section h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; margin-bottom: 20px; text-align: center; }
+.stat-card { background-color: #fdfaf2; border: 1px solid #d2b48c; padding: 20px; border-radius: 8px; text-align: center; }
+.stat-card-title { font-size: 1.2rem; color: #5a3e2b; } .stat-card-number { font-size: 2.5rem; font-weight: bold; color: #8b6b52; }
+.profile-details dt { font-weight: normal; color: #6d4c41; } .profile-details dd { font-weight: bold; font-size: 1.2rem; margin-bottom: 1rem; }
+
+/* --- Tables for Admin Panel --- */
+.table { background-color: #fdfaf2; }
+.table thead th { font-family: 'Cormorant Garamond', serif; background-color: rgba(210, 180, 140, 0.3); border-bottom: 2px solid #a1866f; color: #5a3e2b; }
+.table-hover > tbody > tr:hover > * { --bs-table-accent-bg: rgba(210, 180, 140, 0.2); }
+.table td { vertical-align: middle; }
